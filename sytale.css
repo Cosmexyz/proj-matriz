@@ -1,0 +1,30 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;    
+}
+
+.quadrado{  
+            width: 100px;
+            height: 100px;
+            background-color: red;  
+            }
+
+.deslizando {
+            animation : deslizar 2s;
+}
+
+
+@keyframes deslizar {     
+              
+    from {
+            transform: translateX(0px);
+    }
+
+    to {
+            transform: translateX(1820px);
+    }
+}

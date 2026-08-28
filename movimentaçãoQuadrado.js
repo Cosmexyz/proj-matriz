@@ -1,6 +1,6 @@
 const quadrado = document.querySelector(".quadrado")
 
-import { pontoF, pontoI } from "./translação.js";
+import { pontoTF, pontoTI } from "./translação.js";
 
 let noPontoF = false;
 
@@ -11,15 +11,15 @@ document.addEventListener('keydown', function(event) {
 
         if(noPontoF == false) {
            
-            quadrado.style.left = pontoF[0][0] + "px";
-            quadrado.style.top = pontoF[1][0] + "px";
+            quadrado.style.left = pontoTF[0][0] + "px";
+            quadrado.style.top = pontoTF[1][0] + "px";
 
         noPontoF = true;
 
         }else{
 
-            quadrado.style.left = pontoI[0][0] + "px";
-            quadrado.style.top = pontoI[1][0] + "px";
+            quadrado.style.left = pontoTI[0][0] + "px";
+            quadrado.style.top = pontoTI[1][0] + "px";
 
         noPontoF = false;
         
@@ -28,4 +28,5 @@ document.addEventListener('keydown', function(event) {
 
 
     })
+
    

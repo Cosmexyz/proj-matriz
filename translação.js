@@ -42,4 +42,4 @@ const resultado = multiplicar(matriz, pontoI)
 
 const pontoF = resultado
 
-export{pontoF};
+export{pontoF, pontoI};

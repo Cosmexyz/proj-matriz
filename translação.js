@@ -1,6 +1,6 @@
 const quadrado = document.querySelector(".quadrado")
 
-//const posição = quadrado.getBoundingClientRect()
+const posição = quadrado.getBoundingClientRect()
 
 const matriz = [
     [1, 0, 100],

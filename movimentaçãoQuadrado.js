@@ -1,8 +1,10 @@
 const quadrado = document.querySelector(".quadrado")
 
 import { pontoTF, pontoTI } from "./translação.js";
+import { pontoRF, pontoRI } from "./rotação.js";
 
 let noPontoTF = false;
+let noPontoRF = false;
 
 document.addEventListener('keydown', function(event) {
 
@@ -26,7 +28,23 @@ document.addEventListener('keydown', function(event) {
         }}
     //TerminoMovimentaçãoTranslação
 
+    //ComeçoMovimentaçãoRotação
+    if(event.key == '2'){
 
+        if(noPontoRF == false){
+
+            quadrado.style.left = pontoRF[0][0] + "px";
+            quadrado.style.top = pontoRF[1][0] + "px";
+        
+        noPontoRF = true;
+
+        }else{
+
+            quadrado.style.left = pontoRI[0][0] + "px";
+            quadrado.style.top = pontoRI[1][0] + "px";
+        
+        noPontoRF = false;
+      //TerminoMovimentaçãoRotação
+        }}
     })
 
-   

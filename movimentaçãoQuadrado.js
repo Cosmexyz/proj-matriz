@@ -33,18 +33,17 @@ document.addEventListener('keydown', function(event) {
 
         if(noPontoRF == false){
 
-            quadrado.style.left = pontoRF[0][0] + "px";
-            quadrado.style.top = pontoRF[1][0] + "px";
-        
+            quadrado.style.transform = `rotate(${angulo}rad)`;
+
         noPontoRF = true;
 
         }else{
 
-            quadrado.style.left = pontoRI[0][0] + "px";
-            quadrado.style.top = pontoRI[1][0] + "px";
+             quadrado.style.transform = `rotate(0rad)`;
+        
         
         noPontoRF = false;
-      //TerminoMovimentaçãoRotação
+    //TerminoMovimentaçãoRotação
+
         }}
     })
-

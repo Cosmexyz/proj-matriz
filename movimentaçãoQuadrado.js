@@ -1,10 +1,12 @@
 const quadrado = document.querySelector(".quadrado")
 
 import { pontoTF, pontoTI } from "./translação.js";
-import { pontoRF, pontoRI } from "./rotação.js";
+import {angulo} from "./rotação.js";
+import {alturaFinal, larguraFinal, larguraInicial, alturaInicial} from "./escala.js";
 
 let noPontoTF = false;
 let noPontoRF = false;
+let noPontoEF = false;
 
 document.addEventListener('keydown', function(event) {
 
@@ -42,6 +44,36 @@ document.addEventListener('keydown', function(event) {
              quadrado.style.transform = `rotate(0rad)`;
         
         
+        noPontoRF = false;
+    
+        }}
+    //TerminoMovimentaçãoRotação
+
+    //ComeçoEscala
+    if(event.key == '3'){
+
+        if(noPontoEF == false) {
+
+            quadrado.style.width = larguraFinal + "px";
+            quadrado.style.heigth = alturaFinal + "px";
+
+        noPontoEF = true;
+
+    }else {
+
+            quadrado.style.width = larguraInicial + "px";
+            quadrado.style.heigth = alturaInicial + "px";
+
+        noPontoEF = false;
+
+    }}
+    //TerminoEscala
+
+
+
+    })
+
+
         noPontoRF = false;
     //TerminoMovimentaçãoRotação
 

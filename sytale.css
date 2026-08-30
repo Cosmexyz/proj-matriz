@@ -7,11 +7,154 @@ body {
             overflow: hidden;    
 }
 
-.quadrado{  
+.quadrado {  
             width: 150px;
             height: 80px;
             background-color: red;
             position: absolute;
             transform-origin: center;
+            
+}
+
+h1 {
+            font-size: 25px;
+            position: absolute;
+            top: 0;
+            left: 30px;
+}
+
+.borda1{
+            width: 65px; /* largura da caixa */
+            height: 45px; /* altura da caixa */
+            border: 3px solid rgb(161, 158, 158);
+            background-color: transparent;
+            position: absolute; /* termite usar o top e left*/
+            top: 50px; /* mexe a posição na vertical*/
+            left: 75px; /* mexe a posição na horizontal */
+
+            display: flex; /* deixa o container flexivel */
+            justify-content: center; /* centraliza na horizontal */
+            align-items: flex-start; /* alinha o conteudo no topo(vertical) */
+            font-size: 20px; /* tamanho da fonte dentro da ciaxa */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif; /* fonte usada */
+            padding: 5px; /* afasta o texto da borda */
+            text-align: center; /*centraliza o texto entre si(util se tiver mais de uma linha */
+
+}
+
+h2 {
+            font-size: 25px;
+            position: absolute;
+            top: -2px;
+            left: 350px;
+
+}
+
+.borda2{
+            width: 65px; /* largura da caixa */
+            height: 45px; /* altura da caixa */
+            border: 3px solid rgb(161, 158, 158);
+            background-color: transparent;
+            position: absolute; /* termite usar o top e left*/
+            top: 48px; /* mexe a posição na vertical*/
+            left: 370px; /* mexe a posição na horizontal */
+
+            display: flex; /* deixa o container flexivel */
+            justify-content: center; /* centraliza na horizontal */
+            align-items: flex-start; /* alinha o conteudo no topo(vertical) */
+            font-size: 20px; /* tamanho da fonte dentro da ciaxa */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif; /* fonte usada */
+            padding: 5px; /* afasta o texto da borda */
+            text-align: center; /*centraliza o texto entre si(util se tiver mais de uma linha */
+           
+
+}
+
+h3 {
+            font-size: 25px;
+            position: absolute;
+            top: -5px;
+            left: 700px;
+
+}
+
+.borda3{
+            width: 65px; /* largura da caixa */
+            height: 45px; /* altura da caixa */
+            border: 3px solid rgb(161, 158, 158);
+            background-color: transparent;
+            position: absolute; /* termite usar o top e left*/
+            top: 48px; /* mexe a posição na vertical*/
+            left: 710px; /* mexe a posição na horizontal */
+
+            display: flex; /* deixa o container flexivel */
+            justify-content: center; /* centraliza na horizontal */
+            align-items: flex-start; /* alinha o conteudo no topo(vertical) */
+            font-size: 20px; /* tamanho da fonte dentro da ciaxa */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif; /* fonte usada */
+            padding: 5px; /* afasta o texto da borda */
+            text-align: center; /*centraliza o texto entre si(util se tiver mais de uma linha */
+           
+}
+
+h4 {
+            font-size: 25px;
+            position: absolute;
+            top: -13px;
+            left: 1000px;
+
+}
+
+.borda4{
+            width: 65px; /* largura da caixa */
+            height: 45px; /* altura da caixa */
+            border: 3px solid rgb(161, 158, 158);
+            background-color: transparent;
+            position: absolute; /* termite usar o top e left*/
+            top: 48px; /* mexe a posição na vertical*/
+            left: 1030px; /* mexe a posição na horizontal */
+
+            display: flex; /* deixa o container flexivel */
+            justify-content: center; /* centraliza na horizontal */
+            align-items: flex-start; /* alinha o conteudo no topo(vertical) */
+            font-size: 20px; /* tamanho da fonte dentro da ciaxa */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif; /* fonte usada */
+            padding: 5px; /* afasta o texto da borda */
+            text-align: center; /*centraliza o texto entre si(util se tiver mais de uma linha */
+           
+
+}
+
+h5 {
+            font-size: 25px;
+            position: absolute;
+            top: -20px;
+            left: 1300px;
+
+}
+
+.borda5{
+            width: 65px; /* largura da caixa */
+            height: 45px; /* altura da caixa */
+            border: 3px solid rgb(161, 158, 158);
+            background-color: transparent;
+            position: absolute; /* termite usar o top e left*/
+            top: 48px; /* mexe a posição na vertical*/
+            left: 1365px; /* mexe a posição na horizontal */
+
+            display: flex; /* deixa o container flexivel */
+            justify-content: center; /* centraliza na horizontal */
+            align-items: flex-start; /* alinha o conteudo no topo(vertical) */
+            font-size: 20px; /* tamanho da fonte dentro da ciaxa */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif; /* fonte usada */
+            padding: 5px; /* afasta o texto da borda */
+            text-align: center; /*centraliza o texto entre si(util se tiver mais de uma linha */
+           
+
 }
 

@@ -1,14 +1,16 @@
 const quadrado = document.querySelector(".quadrado")
 
-import {pontoTF, pontoTI} from "./translação.js";
-import {angulo} from "./rotação.js";
-import {alturaFinal, larguraFinal, larguraInicial, alturaInicial} from "./escala.js";
-import {refletir} from "./reflexo.js";
+import { pontoTF, pontoTI } from "./translação.js";
+import { angulo } from "./rotação.js";
+import { alturaFinal, larguraFinal, larguraInicial, alturaInicial } from "./escala.js";
+import { refletir } from "./reflexo.js";
+import { cisalhar } from "./cisalhamento.js";
 
 let noPontoTF = false;
 let noPontoRF = false;
 let noPontoEF = false;
 let noPontoREF = false;
+let noPontoCISA = false;
 
 document.addEventListener('keydown', function(event) {
 
@@ -89,6 +91,26 @@ document.addEventListener('keydown', function(event) {
     
         }}
     //TerminoRefletir
+
+    //comwçarCisa
+    if(event.key == '5'){
+
+        if(noPontoCISA == false){
+
+           cisalhar();
+
+        noPontoCISA = true;
+
+        }else{
+
+             quadrado.style.transform = `skewX(0rad)`;
+        
+        
+        noPontoCISA = false;
+    
+        }}
+    //TerminoCisa
+
 
     })
 

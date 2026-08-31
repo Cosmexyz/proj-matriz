@@ -1,12 +1,14 @@
 const quadrado = document.querySelector(".quadrado")
 
-import { pontoTF, pontoTI } from "./translação.js";
+import {pontoTF, pontoTI} from "./translação.js";
 import {angulo} from "./rotação.js";
 import {alturaFinal, larguraFinal, larguraInicial, alturaInicial} from "./escala.js";
+import {refletir} from "./reflexo.js";
 
 let noPontoTF = false;
 let noPontoRF = false;
 let noPontoEF = false;
+let noPontoREF = false;
 
 document.addEventListener('keydown', function(event) {
 
@@ -69,13 +71,24 @@ document.addEventListener('keydown', function(event) {
     }}
     //TerminoEscala
 
+    //ComeçoRefletir
+    if(event.key == '4'){
 
+        if(noPontoREF == false){
 
-    })
+           refletir()
 
+        noPontoREF = true;
 
-        noPontoRF = false;
-    //TerminoMovimentaçãoRotação
+        }else{
 
+             quadrado.style.transform = `scaleY(1)`;
+        
+        
+        noPontoREF = false;
+    
         }}
+    //TerminoRefletir
+
     })
+
